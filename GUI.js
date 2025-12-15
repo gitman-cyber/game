@@ -1,3 +1,24 @@
+
+// ---------------------------
+// Base GUI Class
+// ---------------------------
+class GUI {
+    constructor(x = 0, y = 0, w = 0, h = 0) {
+        this.x = x;
+        this.y = y;
+        this.w = w;
+        this.h = h;
+
+        this.visible = true;
+    }
+
+    show()  { this.visible = true; }
+    hide()  { this.visible = false; }
+    toggle(){ this.visible = !this.visible; }
+
+    draw() {} // override in subclasses
+}
+
 class Inventory extends GUI {
     constructor(items, x, y, font, w, h) {
         super(x, y, w, h);
@@ -144,22 +165,3 @@ class Font extends GUI {
     }
 }
 
-// ---------------------------
-// Base GUI Class
-// ---------------------------
-class GUI {
-    constructor(x = 0, y = 0, w = 0, h = 0) {
-        this.x = x;
-        this.y = y;
-        this.w = w;
-        this.h = h;
-
-        this.visible = true;
-    }
-
-    show()  { this.visible = true; }
-    hide()  { this.visible = false; }
-    toggle(){ this.visible = !this.visible; }
-
-    draw() {} // override in subclasses
-}
