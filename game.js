@@ -18,7 +18,7 @@ class Game {
     // LOAD ASSETS
     // ---------------------------
     preload() {
-        this.font = new Font("assets/RobotoMono.ttf");
+        this.font = new Font("/Minecraft.ttf");
     }
 
     // ---------------------------
