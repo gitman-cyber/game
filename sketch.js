@@ -8,7 +8,9 @@ let game = new Game();
 function preload() { game.preload(); }
 function setup() { game.setup(); }
 function draw() { game.loop(); }
-
+document.addEventListener("click", () => {
+  canvas.requestPointerLock();
+});
 // ---------------------------
 // INPUT HANDLING
 // ---------------------------
