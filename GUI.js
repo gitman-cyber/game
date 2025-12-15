@@ -122,8 +122,8 @@ class Debug extends GUI {
         this.lines = [];
     }
 
-    log(text) {
-        this.lines.push(text);
+    log(text2) {
+        this.lines.push(text2);
         if (this.lines.length > 12) this.lines.shift();
     }
 
